@@ -6,10 +6,17 @@
  * @flow strict-local
  */
 
-import React from 'react';
-import RouteView from './src/router/index';
+import React from "react";
+import { View } from "react-native";
+import RouteView from "./src/router/index";
+import BottomNav from "./src/components/BottomNav";
 const App = () => {
-  return <RouteView />;
+  return (
+    <View>
+      <RouteView></RouteView>
+      <BottomNav></BottomNav>
+    </View>
+  );
 };
 
 export default App;
