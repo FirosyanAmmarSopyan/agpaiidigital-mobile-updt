@@ -19,17 +19,15 @@ const Home = ({ navigation }) => {
       />
       <Button
         title="Ke Halaman Login"
-        onPress={() => navigation.navigate('Login', {
+        onPress={() => navigation.navigate('LoginPage', {
           json: JSON.stringify(user)
         })}
       />
-      
       <Button
-        title="Ke Halaman rabbit"
-        onPress={() => navigation.navigate('rabbit-experiments', {
-
-        })}
+        title="Ke Page A"
+        onPress={() => navigation.navigate('PageA')}
       />
+    
     </View>
   );
 };

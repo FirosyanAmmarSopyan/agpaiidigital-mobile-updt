@@ -12,10 +12,7 @@ import RouteView from "./src/router/index";
 import BottomNav from "./src/components/BottomNav";
 const App = () => {
   return (
-    <View>
-      <RouteView></RouteView>
-      <BottomNav></BottomNav>
-    </View>
+    <RouteView></RouteView>
   );
 };
 
