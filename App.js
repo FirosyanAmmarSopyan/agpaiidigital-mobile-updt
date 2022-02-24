@@ -10,9 +10,14 @@ import React from "react";
 import { View } from "react-native";
 import RouteView from "./src/router/index";
 import BottomNav from "./src/components/BottomNav";
+
+import { NativeBaseProvider, Box } from "native-base";
+
 const App = () => {
   return (
-    <RouteView></RouteView>
+    <NativeBaseProvider>
+      <RouteView></RouteView>
+    </NativeBaseProvider>
   );
 };
 

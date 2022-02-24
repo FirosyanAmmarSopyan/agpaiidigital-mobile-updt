@@ -1,17 +1,16 @@
-import React, { Component } from 'react'
-import { View, Image } from 'react-native'
-import { Logo, LogoXml } from './../store/Assets'
+import React, { Component } from "react";
+import { View, Image, Text } from "react-native";
+import { Logo, LogoSvg } from "./../store/Assets";
 import { SvgXml } from "react-native-svg";
-import LogoSvg from './../assets/LogoXml.svg'
 
-const PageA = () => {
-    return (
-        <View>
-            <Image source={Logo}></Image>
-            {/* <LogoSvg></LogoSvg> */}
-            {/* <Svg source xml={LogoXml}></Svg> */}
-        </View>
-    )
+function PageA() {
+  return (
+    <View>
+      <Text>Halo</Text>
+      <Image source={Logo}></Image>
+      <SvgXml width="200" height="200" xml={LogoSvg} />
+    </View>
+  );
 }
 
-export default PageA
+export default PageA;
