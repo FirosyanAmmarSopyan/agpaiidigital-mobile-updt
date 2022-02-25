@@ -65,6 +65,7 @@ const LoginPage = ({ navigation }) => {
         </Box>
         <Box mt="3">
           <Button
+            onPress={() => navigation.navigate("RegisterPage")}
             variant="outline"
             height="10"
             backgroundColor={"transparent"}

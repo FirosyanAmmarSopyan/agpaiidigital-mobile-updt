@@ -5,8 +5,10 @@ import LoginPage from "./../pages/LoginPage";
 import RegisterPage from "./../pages/RegisterPage";
 import Beranda from "./../pages/Beranda";
 import PageA from "./../pages/PageA";
-import React, { Component } from "react";
+import React from "react";
 import PickPhoto from "../pages/PickPhoto";
+// import component header Beranda
+import HeaderHome from "./../components/HeaderHome";
 
 const Stack = createNativeStackNavigator();
 const router = () => {
@@ -28,7 +30,12 @@ const router = () => {
           name="RegisterPage"
           component={RegisterPage}
         />
-        <Stack.Screen name="Beranda" component={Beranda} />
+        <Stack.Screen
+          options={{ headerShown: false }}
+          name="Beranda"
+          component={Beranda}
+          options={{ header: (props) => <HeaderHome /> }}
+        />
         <Stack.Screen name="PageA" component={PageA} />
         <Stack.Screen name="PickPhoto" component={PickPhoto} />
       </Stack.Navigator>

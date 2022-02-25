@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Box, Button, Text, Heading, ScrollView } from "native-base";
+import StoreAuth from "./../store/Auth";
+import { observer } from "remx";
 
 const Home = ({ navigation }) => {
   const [user, onChangeText] = React.useState({
@@ -11,6 +13,10 @@ const Home = ({ navigation }) => {
       {
         title: "Login",
         page: "LoginPage",
+      },
+      {
+        title: "Page A",
+        page: "PageA",
       },
       {
         title: "Beranda",
@@ -67,8 +73,8 @@ const Home = ({ navigation }) => {
     ];
     let Items = [];
 
-    Items = lists.map((item) => (
-      <Box style={{ marginVertical: 10 }}>
+    Items = lists.map((item, i) => (
+      <Box style={{ marginVertical: 10 }} key={`menu-${i}`}>
         <Button onPress={() => navigation.navigate(item.page)}>
           <Text style={{ color: "white" }}>Ke Halaman {item.title}</Text>
         </Button>
@@ -82,6 +88,7 @@ const Home = ({ navigation }) => {
       <Box style={{ margin: 30 }}>
         <Box style={{ alignItems: "center" }}>
           <Heading size="sm">Demo Halaman Agpaii</Heading>
+          <Text>Halo {StoreAuth.getName()}</Text>
         </Box>
         <ListMenu></ListMenu>
       </Box>
@@ -89,4 +96,4 @@ const Home = ({ navigation }) => {
   );
 };
 
-export default Home;
+export default observer(Home);

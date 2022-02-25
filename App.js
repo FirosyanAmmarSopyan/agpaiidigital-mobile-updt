@@ -7,12 +7,11 @@
  */
 
 import React from "react";
-import { View } from "react-native";
 import RouteView from "./src/router/index";
-import BottomNav from "./src/components/BottomNav";
-
 import { NativeBaseProvider, Box } from "native-base";
+import Boot from "./src/boot";
 
+Boot();
 const App = () => {
   return (
     <NativeBaseProvider>
