@@ -1,6 +1,7 @@
 import * as remx from "remx";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { api } from "./../boot/axios";
+import { CLIENT_ID, CLIENT_SECRET } from "./../store/Config";
 // states
 const initialState = {
   name: "Azwar",
@@ -30,8 +31,8 @@ const actions = {
     return new Promise((resolve, reject) => {
       let access = {
         grant_type: "password",
-        client_id: 2,
-        client_secret: "RM0SqcmpoatgzQ5JXi6aeEXYI6dSaPiWDSbTW79s",
+        client_id: CLIENT_ID,
+        client_secret: CLIENT_SECRET,
         ...credential,
       };
       api

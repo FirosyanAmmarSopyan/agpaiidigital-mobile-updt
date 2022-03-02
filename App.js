@@ -8,7 +8,7 @@
 
 import React from "react";
 import RouteView from "./src/router/index";
-import { NativeBaseProvider, Box } from "native-base";
+import { NativeBaseProvider } from "native-base";
 import Boot from "./src/boot";
 
 Boot();

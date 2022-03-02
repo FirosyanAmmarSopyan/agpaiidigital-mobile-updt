@@ -24,16 +24,12 @@ import React from "react";
 const Header = () => {
   return (
     <Box height="60">
-      <Grid style={{ flexDirection: "col" }}>
-        <Col>
-          <Box alignItems={"flex-start"} ml="7" mt="3">
-            <SvgXml xml={Agpaii} width={"40"} height={"40"} />
-          </Box>
-          <Box alignItems={"center"}>
-            <Text>Tes</Text>
-          </Box>
-        </Col>
-      </Grid>
+      <Box alignItems={"flex-start"} ml="7" mt="3">
+        <SvgXml xml={Agpaii} width={"40"} height={"40"} />
+      </Box>
+      <Box alignItems={"center"}>
+        <Text>Tes</Text>
+      </Box>
     </Box>
   );
 };
