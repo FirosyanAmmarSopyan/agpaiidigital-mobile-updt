@@ -1,0 +1,9 @@
+@font-face {
+    fontFamily: Poppins;
+    src: url(./fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    fontFamily: Poppins-Black;
+    src: url(./fonts/Poppins/Poppins-Black.ttf);
+}
+

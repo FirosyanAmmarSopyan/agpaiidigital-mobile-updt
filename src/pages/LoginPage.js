@@ -7,6 +7,7 @@ import {
   Center,
   ScrollView,
   Image,
+  View,
 } from "native-base";
 import { Logo, LogoSvg, BgBawah } from "../store/Assets";
 import { SvgXml } from "react-native-svg";
@@ -16,8 +17,9 @@ const windowHeight = Dimensions.get("window").height;
 import { StyleSheet } from "react-native";
 
 const LoginPage = ({ navigation }) => {
+  
   return (
-    <ScrollView>
+    <View>
       <Box style={{ marginTop: 40 }} px="5">
         <Box alignItems={"center"}>
           <SvgXml xml={LogoSvg} />
@@ -54,7 +56,7 @@ const LoginPage = ({ navigation }) => {
           </Button>
         </Box>
         <Box mt="3">
-          <Button height="10" style={{ backgroundColor: "#009788" }} size="sm">
+          <Button onPress={()=>true} height="10" style={{ backgroundColor: "#009788" }} size="sm">
             <Text bold style={{ color: "white" }}>
               MASUK
             </Text>
@@ -79,9 +81,9 @@ const LoginPage = ({ navigation }) => {
         </Box>
       </Box>
       <Box style={styles.footer}>
-        <SvgXml height={200} width={windowWidth} xml={BgBawah} />
+        <SvgXml height={200} width={windowWidth} xml={BgBawah}  />
       </Box>
-    </ScrollView>
+    </View>
   );
 };
 

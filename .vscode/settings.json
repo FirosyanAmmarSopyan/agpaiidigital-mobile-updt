@@ -2,5 +2,8 @@
     "eslint.enable": true,
     "files.associations": {
         "*.js": "javascriptreact"
-    }
+    },
+    "editor.fontSize":15,
+    // "editor.fontFamily": "Arial",
+    // "workbench.colorTheme": "Monokai"
 }

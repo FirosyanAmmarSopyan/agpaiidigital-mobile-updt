@@ -19,10 +19,6 @@ const Home = ({ navigation }) => {
         page: "PageA",
       },
       {
-        title: "Beranda",
-        page: "Beranda",
-      },
-      {
         title: "Splash Screen",
         page: "PageA",
       },
@@ -36,7 +32,7 @@ const Home = ({ navigation }) => {
       },
       {
         title: "Search Akun",
-        page: "PageA",
+        page: "SearchAccount",
       },
       {
         title: "Notifikasi",
@@ -67,12 +63,41 @@ const Home = ({ navigation }) => {
         page: "PageA",
       },
       {
-        title: "Pilih File di Halaman Buat Postingan",
-        page: "PageA",
+        title: "LogiN",
+        page: "LogiN",
       },
+      {
+        title: "Beranda",
+        page: "Beranda",
+      },
+      { 
+        title: "Header",
+        page: "Header",        
+      },
+      {
+        title: "Modal",
+        page: "Modal",
+      },
+      {
+        title: "ImageSlider",
+        page: "ImageSlider",
+      },
+      {
+        title: "Tabs",
+        page: "Tabs",
+      },
+      {
+        title: "HeaderRapat",
+        page: "HeaderRapat",
+      },
+      {
+        title: "Rapat",
+        page: "Meeting",
+      },
+      
     ];
     let Items = [];
-
+    
     Items = lists.map((item, i) => (
       <Box style={{ marginVertical: 10 }} key={`menu-${i}`}>
         <Button onPress={() => navigation.navigate(item.page)}>
