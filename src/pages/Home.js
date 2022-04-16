@@ -19,16 +19,40 @@ const Home = ({ navigation }) => {
         page: "PageA",
       },
       {
-        title: "Splash Screen",
-        page: "PageA",
+        title: "Kamera",
+        page: "Kamera",
+      },
+      {
+        title: "SelectListMeeting",
+        page: "SelectListMeeting",
+      },
+      {
+        title: "JoinMeeting",
+        page: "JoinMeeting",
+      },
+      {
+        title: "JoinMeetingSchedule",
+        page: "JoinMeetingSchedule",
+      },
+      {
+        title: "CreateScheduleMeetingEmpty",
+        page: "CreateScheduleMeetingEmpty",
+      },
+      {
+        title: "CreateScheduleMeeting",
+        page: "CreateScheduleMeeting",
+      },
+      {
+        title: "SelectListEvent",
+        page: "SelectListEvent",
+      },
+      {
+        title: "CreateMeeting",
+        page: "CreateMeeting",
       },
       {
         title: "RegisterPage",
         page: "RegisterPage",
-      },
-      {
-        title: "Komentar",
-        page: "PageA",
       },
       {
         title: "Search Akun",
@@ -36,31 +60,15 @@ const Home = ({ navigation }) => {
       },
       {
         title: "Notifikasi",
-        page: "PageA",
+        page: "Notifikasi",
       },
       {
         title: "Buat Postingan",
-        page: "PageA",
+        page: "MakePost",
       },
       {
         title: "Pilih Galeri",
         page: "PickPhoto",
-      },
-      {
-        title: "Ambil Foto",
-        page: "PageA",
-      },
-      {
-        title: "Ambil Video",
-        page: "PageA",
-      },
-      {
-        title: "Pilih Rapat di Halaman Buat Postingan",
-        page: "PageA",
-      },
-      {
-        title: "Pilih Acara di Halaman Buat Postingan",
-        page: "PageA",
       },
       {
         title: "LogiN",
@@ -75,16 +83,12 @@ const Home = ({ navigation }) => {
         page: "Header",        
       },
       {
-        title: "Modal",
-        page: "Modal",
+        title: "Komentar",
+        page: "Komentar",
       },
       {
         title: "ImageSlider",
         page: "ImageSlider",
-      },
-      {
-        title: "Tabs",
-        page: "Tabs",
       },
       {
         title: "HeaderRapat",
@@ -94,13 +98,69 @@ const Home = ({ navigation }) => {
         title: "Rapat",
         page: "Meeting",
       },
-      
+      {
+        title: "Login",
+        page: "LogiN",
+      },
+      {
+        title: "MakeEvent",
+        page: "MakeEvent",
+      },
+      {
+        title: "DetailEvent",
+        page: "DetailEvent",
+      },
+      {
+        title: "ExploreEvent",
+        page: "ExploreEvent",
+      },
+      {
+        title: "InvitationEmpty",
+        page: "InvitationEmpty",
+      },
+      {
+        title:"EmptyEvent",
+        page:"EmptyEvent",
+      },
+      {
+        title:"HeaderPickPhoto",
+        page:"HeaderPickPhoto",
+      },
+      {
+        title:"HomeEvent",
+        page:"HomeEvent",
+      },
+      {
+        title:"Invitation",
+        page:"Invitation",
+      },
+      {
+        title:"CreateEventAddPerson",
+        page:"CreateEventAddPerson",
+      },
+      {
+        title:"MeetingIsi",
+        page:"MeetingIsi",
+      },
+      {
+        title:"PickPersonEvent",
+        page:"PickPersonEvent",
+      },
+      {
+        title:"CreateEvent",
+        page:"CreateEvent",
+      },
+      {
+        title:"Kosong",
+        page:"Kosong",
+      },
+    
+    
     ];
     let Items = [];
-    
     Items = lists.map((item, i) => (
       <Box style={{ marginVertical: 10 }} key={`menu-${i}`}>
-        <Button onPress={() => navigation.navigate(item.page)}>
+        <Button onHoverIn={{backgroundColor: "white"}} onPress={() => navigation.navigate(item.page)}>
           <Text style={{ color: "white" }}>Ke Halaman {item.title}</Text>
         </Button>
       </Box>

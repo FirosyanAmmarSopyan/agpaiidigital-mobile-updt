@@ -1,43 +1,88 @@
 import React from "react";
-import { Box, Text, HStack, ScrollView, Image } from "native-base";
+import { View, TouchableOpacity, StyleSheet, Dimensions } from "react-native";
+import {
+  Box,
+  Text,
+  HStack,
+  ScrollView,
+  Image,
+  Fab,
+  Icon,
+  Center,
+  Button,
+  Modal,
+} from "native-base";
+import { useState } from "react";
 import { Col, Row, Grid } from "react-native-easy-grid";
+import { AntDesign } from "@expo/vector-icons";
 import { SvgXml } from "react-native-svg";
 import { Camera } from "./../store/Assets";
+import HeaderPickPhoto from "./../components/HeaderPickPhoto";
 
+
+
+
+const windowHeight = Dimensions.get("screen").height;
+const windowWidth = Dimensions.get("window").width;
 const PickPhoto = ({ navigation }) => {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <ScrollView>
+    <Box flex={1}>
+      <HeaderPickPhoto />
+      <ScrollView>
+        <Box flex={1}>
+          <Grid style={{ flexDirection: "row", flexWrap: "wrap" }}>
+            <Col
+            onPress={() => setShowModal(true)}
+              style={{
+                height: 120,
+                //   backgroundColor: index % 2 == 0 ? "red" : "blue",
+                width: "33%",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: 2,
+                backgroundColor: "white",
+              }}
+            >
+              <SvgXml xml={Camera}></SvgXml>
+            </Col>
+            <Items></Items>
+          </Grid>
+        </Box>
+      </ScrollView>
+
       <Box>
-        <Grid style={{ flex: 1, flexDirection: "row", flexWrap: "wrap" }}>
-          <Col
-            style={{
-              height: 200,
-              //   backgroundColor: index % 2 == 0 ? "red" : "blue",
-              width: "50%",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: 2,
-              backgroundColor: "white",
-            }}
-          >
-            <SvgXml xml={Camera}></SvgXml>
-          </Col>
-          <Items></Items>
-        </Grid>
+        <Button style={{ backgroundColor: "#009788", height: 45 }}>
+          Pilih Beberapa
+        </Button>
       </Box>
-    </ScrollView>
+
+
+
+      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+        <Modal.Content maxWidth="400px">
+          <Modal.CloseButton />
+          <Modal.Header>Durasi video terlalu panjang</Modal.Header>
+          <Modal.Body>
+            Durasi video minimal 1 menit
+          </Modal.Body>
+        </Modal.Content>
+      </Modal>
+
+
+    </Box>
   );
 };
 
 const Items = () => {
   const lists = [];
-  for (let index = 0; index < 60; index++) {
+  for (let index = 0; index < 16; index++) {
     lists.push(
       <Col
         style={{
-          height: 200,
+          height: 120,
           //   backgroundColor: index % 2 == 0 ? "red" : "blue",
-          width: "50%",
+          width: "33%",
           alignItems: "center",
           justifyContent: "center",
           padding: 2,

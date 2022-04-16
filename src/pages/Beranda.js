@@ -15,18 +15,19 @@ import Modall from "../components/Modal";
 import ImageSlider from "../components/ImageSlider";
 import { AntDesign, FontAwesome5, Ionicons } from "@expo/vector-icons";
 import PDF from "../assets/PDF.png";
-import {SvgXml} from "react-native-svg"
-import Jadwal from "../assets/jadwal.svg"
+import { SvgXml } from "react-native-svg";
+import Jadwal from "../assets/jadwal.svg";
+import ShareButton from "../components/ShareButton";
 
 const windowHeight = Dimensions.get("window").height;
 const coljabatans = 290;
 const coldesk = 290;
 const Beranda = () => {
   return (
-    <View style={{ height: "100%",paddingRight:6 }}>
+    <View style={{ height: "100%", paddingRight: 6 }}>
       <Header />
       <ScrollView>
-        <View style={{ flexDirection: "row", marginLeft: 15,marginTop:10 }}>
+        <View style={{ flexDirection: "row", marginLeft: 15, marginTop: 10 }}>
           <Avatar source={hisyam} size={60}></Avatar>
           <View style={{ flexDirection: "column" }}>
             <View
@@ -45,7 +46,7 @@ const Beranda = () => {
                   width: coldesk,
                   marginTop: 5,
                   fontSize: 15,
-                  paddingRight:10,
+                  paddingRight: 10,
                   textAlign: "left",
                   fontWeight: "100",
                   fontFamily: "Roboto",
@@ -62,25 +63,35 @@ const Beranda = () => {
                   style={{
                     flexDirection: "row",
                     marginTop: 3,
-                    marginLeft:5,
-                 
-                    justifyContent:"space-between"
+                    marginLeft: 5,
+
+                    justifyContent: "space-between",
                   }}
                 >
-                  <View style={{ flexDirection: "row",}}>
+                  <View style={{ flexDirection: "row" }}>
                     <TouchableOpacity style={{ color: "red" }}>
-                      <Icon size="xs" as={FontAwesome5} name="heart" style={{marginRight:5}} />
+                      <Icon
+                        size="xs"
+                        as={FontAwesome5}
+                        name="heart"
+                        style={{ marginRight: 5 }}
+                      />
                     </TouchableOpacity>
                     <Text>1rb</Text>
                   </View>
-                  <View style={{ flexDirection: "row"}}>
-                    <Icon size="xs" as={FontAwesome5} name="comment-alt" style={{marginRight:5}} />
+                  <View style={{ flexDirection: "row" }}>
+                    <Icon
+                      size="xs"
+                      as={FontAwesome5}
+                      name="comment-alt"
+                      style={{ marginRight: 5 }}
+                    />
                     <Text>1rb</Text>
                   </View>
-                  <View style={{ }}>
-                    <Icon size="xs" as={AntDesign} name="sharealt" />
+                  <View style={{ marginTop: -8 }}>
+                    <ShareButton />
                   </View>
-                  <View style={{marginRight:20}}>
+                  <View style={{ marginRight: 20 }}>
                     <Text>21 Menit</Text>
                   </View>
                 </View>
@@ -104,7 +115,7 @@ const Beranda = () => {
               </Text>
               <Text
                 style={{
-                  paddingRight:10,
+                  paddingRight: 10,
                   marginLeft: 10,
                   width: coldesk,
                   marginTop: 5,
@@ -129,29 +140,39 @@ const Beranda = () => {
                 excepturi inventore?
               </Text>
               <View>
-              <View
+                <View
                   style={{
                     flexDirection: "row",
                     marginTop: 10,
-                    marginLeft:5,
-                 
-                    justifyContent:"space-between"
+                    marginLeft: 5,
+
+                    justifyContent: "space-between",
                   }}
                 >
-                  <View style={{ flexDirection: "row",}}>
+                  <View style={{ flexDirection: "row" }}>
                     <TouchableOpacity style={{ color: "red" }}>
-                      <Icon size="xs" as={FontAwesome5} name="heart" style={{marginRight:5}} />
+                      <Icon
+                        size="xs"
+                        as={FontAwesome5}
+                        name="heart"
+                        style={{ marginRight: 5 }}
+                      />
                     </TouchableOpacity>
                     <Text>1rb</Text>
                   </View>
-                  <View style={{ flexDirection: "row"}}>
-                    <Icon size="xs" as={FontAwesome5} name="comment-alt" style={{marginRight:5}} />
+                  <View style={{ flexDirection: "row" }}>
+                    <Icon
+                      size="xs"
+                      as={FontAwesome5}
+                      name="comment-alt"
+                      style={{ marginRight: 5 }}
+                    />
                     <Text>1rb</Text>
                   </View>
-                  <View style={{ }}>
-                    <Icon size="xs" as={AntDesign} name="sharealt" />
+                  <View style={{ marginTop: -8 }}>
+                    <ShareButton />
                   </View>
-                  <View style={{marginRight:20}}>
+                  <View style={{ marginRight: 20 }}>
                     <Text>21 Menit</Text>
                   </View>
                 </View>
@@ -182,10 +203,8 @@ const Beranda = () => {
                   textAlign: "left",
                   fontWeight: "300",
                 }}
-              >
-              </Text>
+              ></Text>
               <View>
-               
                 <Button
                   backgroundColor="#E3E3E3"
                   justifyContent="space-between"
@@ -200,31 +219,41 @@ const Beranda = () => {
                     />
                   }
                 >
-                  <Text style={{fontWeight: "bold"}}>File.PDF </Text>
+                  <Text style={{ fontWeight: "bold" }}>File.PDF </Text>
                 </Button>
                 <View
                   style={{
                     flexDirection: "row",
                     marginTop: 10,
-                    marginLeft:5,
-                 
-                    justifyContent:"space-between"
+                    marginLeft: 5,
+
+                    justifyContent: "space-between",
                   }}
                 >
-                  <View style={{ flexDirection: "row",}}>
+                  <View style={{ flexDirection: "row" }}>
                     <TouchableOpacity style={{ color: "red" }}>
-                      <Icon size="xs" as={FontAwesome5} name="heart" style={{marginRight:5}} />
+                      <Icon
+                        size="xs"
+                        as={FontAwesome5}
+                        name="heart"
+                        style={{ marginRight: 5 }}
+                      />
                     </TouchableOpacity>
                     <Text>1rb</Text>
                   </View>
-                  <View style={{ flexDirection: "row"}}>
-                    <Icon size="xs" as={FontAwesome5} name="comment-alt" style={{marginRight:5}} />
+                  <View style={{ flexDirection: "row" }}>
+                    <Icon
+                      size="xs"
+                      as={FontAwesome5}
+                      name="comment-alt"
+                      style={{ marginRight: 5 }}
+                    />
                     <Text>1rb</Text>
                   </View>
-                  <View style={{ }}>
-                    <Icon size="xs" as={AntDesign} name="sharealt" />
+                  <View style={{ marginTop: -8 }}>
+                    <ShareButton />
                   </View>
-                  <View style={{marginRight:20}}>
+                  <View style={{ marginRight: 20 }}>
                     <Text>21 Menit</Text>
                   </View>
                 </View>
@@ -285,7 +314,7 @@ const Beranda = () => {
                         size="xs"
                         color="#586369"
                       />
-                      <Text style={{ color: "#586369"  , marginLeft: 5}}>
+                      <Text style={{ color: "#586369", marginLeft: 5 }}>
                         30 Januari 2022, 12.00
                       </Text>
                     </View>
@@ -296,25 +325,35 @@ const Beranda = () => {
                   style={{
                     flexDirection: "row",
                     marginTop: 10,
-                    marginLeft:5,
-                 
-                    justifyContent:"space-between"
+                    marginLeft: 5,
+
+                    justifyContent: "space-between",
                   }}
                 >
-                  <View style={{ flexDirection: "row",}}>
+                  <View style={{ flexDirection: "row" }}>
                     <TouchableOpacity style={{ color: "red" }}>
-                      <Icon size="xs" as={FontAwesome5} name="heart" style={{marginRight:5}} />
+                      <Icon
+                        size="xs"
+                        as={FontAwesome5}
+                        name="heart"
+                        style={{ marginRight: 5 }}
+                      />
                     </TouchableOpacity>
                     <Text>1rb</Text>
                   </View>
-                  <View style={{ flexDirection: "row"}}>
-                    <Icon size="xs" as={FontAwesome5} name="comment-alt" style={{marginRight:5}} />
+                  <View style={{ flexDirection: "row" }}>
+                    <Icon
+                      size="xs"
+                      as={FontAwesome5}
+                      name="comment-alt"
+                      style={{ marginRight: 5 }}
+                    />
                     <Text>1rb</Text>
                   </View>
-                  <View style={{ }}>
-                    <Icon size="xs" as={AntDesign} name="sharealt" />
+                  <View style={{ marginTop: -8 }}>
+                    <ShareButton />
                   </View>
-                  <View style={{marginRight:20}}>
+                  <View style={{ marginRight: 20 }}>
                     <Text>21 Menit</Text>
                   </View>
                 </View>
@@ -352,12 +391,26 @@ const Beranda = () => {
                     flexDirection: "row",
                     backgroundColor: "#E3E3E3",
                     height: 60,
-                    marginRight:4
+                    marginRight: 4,
                   }}
                 >
-                  <SvgXml style={{marginTop: 10 , marginLeft: 13 ,width: 40 , height: 40}} xml={Jadwal}/>
+                  <SvgXml
+                    style={{
+                      marginTop: 10,
+                      marginLeft: 13,
+                      width: 40,
+                      height: 40,
+                    }}
+                    xml={Jadwal}
+                  />
                   <View style={{ flexDirection: "column", marginLeft: 12 }}>
-                    <Text style={{ fontWeight: "bold", fontSize: 15 , marginTop: 10}}>
+                    <Text
+                      style={{
+                        fontWeight: "bold",
+                        fontSize: 15,
+                        marginTop: 10,
+                      }}
+                    >
                       Pengurus DPD Agpaii
                     </Text>
                     <Text style={{ fontWeight: "bold", fontSize: 15 }}>
@@ -370,25 +423,35 @@ const Beranda = () => {
                   style={{
                     flexDirection: "row",
                     marginTop: 10,
-                    marginLeft:5,
-                 
-                    justifyContent:"space-between"
+                    marginLeft: 5,
+
+                    justifyContent: "space-between",
                   }}
                 >
-                  <View style={{ flexDirection: "row",}}>
+                  <View style={{ flexDirection: "row" }}>
                     <TouchableOpacity style={{ color: "red" }}>
-                      <Icon size="xs" as={FontAwesome5} name="heart" style={{marginRight:5}} />
+                      <Icon
+                        size="xs"
+                        as={FontAwesome5}
+                        name="heart"
+                        style={{ marginRight: 5 }}
+                      />
                     </TouchableOpacity>
                     <Text>1rb</Text>
                   </View>
-                  <View style={{ flexDirection: "row"}}>
-                    <Icon size="xs" as={FontAwesome5} name="comment-alt" style={{marginRight:5}} />
+                  <View style={{ flexDirection: "row" }}>
+                    <Icon
+                      size="xs"
+                      as={FontAwesome5}
+                      name="comment-alt"
+                      style={{ marginRight: 5 }}
+                    />
                     <Text>1rb</Text>
                   </View>
-                  <View style={{ }}>
-                    <Icon size="xs" as={AntDesign} name="sharealt" />
+                  <View style={{ marginTop: -8 }}>
+                    <ShareButton />
                   </View>
-                  <View style={{marginRight:20}}>
+                  <View style={{ marginRight: 20 }}>
                     <Text>21 Menit</Text>
                   </View>
                 </View>

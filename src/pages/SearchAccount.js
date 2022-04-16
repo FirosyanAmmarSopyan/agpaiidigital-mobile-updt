@@ -1,4 +1,5 @@
 import React from "react";
+import { View } from "react-native";
 import {
   VStack,
   Input,
@@ -11,58 +12,70 @@ import {
   Box,
   Divider,
   Heading,
+  StatusBar,
+  Avatar,
 } from "native-base";
-import { Ionicons, MaterialIcons } from "@expo/vector-icons";
+import { Ionicons, MaterialIcons, AntDesign } from "@expo/vector-icons";
 
 function SearchBar() {
   return (
-    <VStack
-      my="4"
-      space={5}
-      w="100%"
-      maxW="300px"
-      divider={
-        <Box px="2">
-          <Divider />
-        </Box>
-      }
-    >
-      <VStack w="100%" space={5} alignSelf="center">
-        <Heading fontSize="lg"><IconButton as={Ionicons} name="arrow-back"></IconButton></Heading>
+    <View>
+      <View style={{ flexDirection: "row" }}>
+        <IconButton
+          style={{ alignSelf: "center" }}
+          icon={<Icon as={AntDesign} name="arrowleft" />}
+        />
         <Input
-          placeholder="Search"
+          placeholder="Cari Akun"
+          placeholderTextColor="black"
           variant="filled"
-          width="100%"
-          borderRadius="10"
-          py="1"
-          px="2"
-          borderWidth="0"
+          width="85%"
+          borderRadius="20"
+          my="1"
           InputLeftElement={
             <Icon
               ml="2"
-              size="4"
-              color="gray.400"
+              size="5"
+              color="black"
               as={<Ionicons name="ios-search" />}
             />
           }
         />
-      </VStack>
-
-      
-    </VStack>
+      </View>
+    </View>
   );
 }
 
-function Example() {
+const SearchAccount = () => {
   return (
+    <View style={{ alignSelf: "center" }}>
       <SearchBar />
-  );
-}
-
-export default () => {
-  return (
-    <NativeBaseProvider>
-        <Example />
-    </NativeBaseProvider>
+      <View style={{ marginTop: 10, flexDirection: "row" }}>
+        <Avatar
+        size="md"
+          source={{
+            uri: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+          }}
+        ></Avatar>
+        <View style={{ flexDirection: "column", marginLeft: 20 }}>
+          <Heading>Suparjo,S.Pd.I</Heading>
+          <Text>Guru TK Sumber Makmur Sidodol</Text>
+        </View>
+      </View>
+      <Divider my="2" />
+      <View style={{ marginTop: 10, flexDirection: "row" }}>
+        <Avatar
+          source={{
+            uri: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+          }}
+        ></Avatar>
+        <View style={{ flexDirection: "column", marginLeft: 20 }}>
+          <Heading>Suparjo,S.Pd.I</Heading>
+          <Text>Guru TK Sumber Makmur Sidodol</Text>
+        </View>
+      </View>
+    </View>
   );
 };
+
+export default SearchAccount;

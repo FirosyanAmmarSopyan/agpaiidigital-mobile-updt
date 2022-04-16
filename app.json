@@ -1,12 +1,13 @@
 {
   "expo": {
     "name": "agpaiidigital-mobile",
-    "slug": "agpaiidigital-mobile",
+    "slug": "AgpaiiDigital-Mobile",
+    "owner": "kelip",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/SplashScreenAGPAII.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
