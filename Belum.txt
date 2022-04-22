@@ -1,0 +1,7 @@
+ - tab diaktifkan setiap page
+ - lihat balasan komentar satu baris
+ - gabung rapat header kurang tengah
+ - heading tidak perlu garis elevation
+ - buat acara plus icon kurang kiri
+ - Button di home jika sudah diwarnai
+ - semua content yang ada di dalam tab tidak bisa diklik tetapi component sudah ready

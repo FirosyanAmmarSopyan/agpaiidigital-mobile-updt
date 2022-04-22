@@ -34,6 +34,15 @@ import JoinMeeting from "../pages/JoinMeeting";
 import JoinMeetingSchedule from "../pages/JoinMeetingSchedule";
 import CreateScheduleMeeting from "../pages/CreateScheduleMeeting";
 import CreateScheduleMeetingEmpty from "../pages/CreateScheduleMeetingEmpty";
+import PenilaianPaketSoal from "../pages/PenilaianPaketSoal";
+import PaketSoalDetail from "../pages/PaketSoalDetail";
+import ButirSoal from "../pages/ButirSoal";
+import DetailPenilaianButirSoal from "../pages/DetailPenilaianButirSoal";
+import PackageSoal from "../pages/PackageSoal";
+import PenilaianMenu from "../pages/PenilaianMenu";
+import CreatePackageQuestion from "../pages/CreatePackageQuestion";
+import MakeQuestion from "../pages/MakeQuestion";
+
 // import component
 import Header from "./../components/Header";
 import KomentarComponent from "./../components/KomentarComponent";
@@ -47,6 +56,26 @@ import HeaderPickPhoto from "./../components/HeaderPickPhoto";
 import IsiAcara from "./../components/IsiAcara";
 import IsiListRapat from "../components/IsiListRapat";
 import IsiListEvent from "../components/IsiListEvent";
+import PaketSoalPremium from "../components/PaketSoalPremium";
+import PaketSoalBiasa from "../components/PaketSoalBiasa";
+import DetailPaketSoal from "../components/DetailPaketSoal";
+import PaketSoalSiswaKosong from "../components/PaketSoalSiswaKosong";
+import PaketSoalSiswa from "../components/PaketSoalSiswa";
+import PaketSoalKomentarKosong from "../components/PaketSoalKomentarKosong";
+import PaketSoalKomentar from "../components/PaketSoalKomentar";
+import PenilaianButirSoalBiasa from "../components/PenilaianButirSoalBiasa";
+import PenilaianButirSoalPremium from "../components/PenilaianButirSoalPremium";
+import DetailButirSoal from "../components/DetailButirSoal";
+import IndikatorButirSoal from "../components/IndikatorButirSoal";
+import DetailCreatePackageQuestion from "../components/DetailCreatePackageQuestion";
+import MakePackageQuestionStandar from "../components/MakePackageQuestionStandar";
+import DropdownClass from "../components/DropdownClass";
+import DropdownKompetensi from "../components/DropdownKompetensi";
+import DropdownSemester from "../components/DropdownSemester";
+import MakePackageQuestionPremium from "../components/MakePackageQuestionPremium";
+
+
+
 
 const Stack = createNativeStackNavigator();
 const router = () => {
@@ -63,11 +92,90 @@ const router = () => {
           name="IsiListRapat"
           component={IsiListRapat}
         />
-       
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="DetailButirSoal"
+          component={DetailButirSoal}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="IndikatorButirSoal"
+          component={IndikatorButirSoal}
+        />
+         <Stack.Screen
+        options={{ headerShown: false }}
+          name="PenilaianMenu"
+          component={PenilaianMenu}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="PackageSoal"
+          component={PackageSoal}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="PaketSoalDetail"
+          component={PaketSoalDetail}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="DetailPenilaianButirSoal"
+          component={DetailPenilaianButirSoal}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="PaketSoalKomentarKosong"
+          component={PaketSoalKomentarKosong}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="PenilaianButirSoalBiasa"
+          component={PenilaianButirSoalBiasa}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="PenilaianButirSoalPremium"
+          component={PenilaianButirSoalPremium}
+        />
+         <Stack.Screen
+        options={{ headerShown: false }}
+          name="PaketSoalKomentar"
+          component={PaketSoalKomentar}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="PaketSoalSiswa"
+          component={PaketSoalSiswa}
+        />
+       <Stack.Screen
+        options={{ headerShown: false }}
+          name="DetailPaketSoal"
+          component={DetailPaketSoal}
+        />
         <Stack.Screen
         options={{ headerShown: false }}
           name="JoinMeetingSchedule"
           component={JoinMeetingSchedule}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="PaketSoalSiswaKosong"
+          component={PaketSoalSiswaKosong}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="PenilaianPaketSoal"
+          component={PenilaianPaketSoal}
+        />
+         <Stack.Screen
+        options={{ headerShown: false }}
+          name="PaketSoalPremium"
+          component={PaketSoalPremium}
+        />
+         <Stack.Screen
+        options={{ headerShown: false }}
+          name="PaketSoalBiasa"
+          component={PaketSoalBiasa}
         />
         <Stack.Screen
         options={{ headerShown: false }}
@@ -261,6 +369,51 @@ const router = () => {
           options={{ headerShown: false }}
           name="SelectListMeeting"
           component={SelectListMeeting}
+        />
+         <Stack.Screen
+          options={{ headerShown: false }}
+          name="ButirSoal"
+          component={ButirSoal}
+        />
+         <Stack.Screen
+          options={{ headerShown: false }}
+          name="CreatePackageQuestion"
+          component={CreatePackageQuestion}
+        />
+         <Stack.Screen
+          options={{ headerShown: false }}
+          name="DetailCreatePackageQuestion"
+          component={DetailCreatePackageQuestion}
+        />
+         <Stack.Screen
+          options={{ headerShown: false }}
+          name="MakeQuestion"
+          component={MakeQuestion}
+        />
+         <Stack.Screen
+          options={{ headerShown: false }}
+          name="MakePackageQuestionStandar"
+          component={MakePackageQuestionStandar}
+        />
+         <Stack.Screen
+          options={{ headerShown: false }}
+          name="DropdownClass"
+          component={DropdownClass}
+        />
+         <Stack.Screen
+          options={{ headerShown: false }}
+          name="DropdownKompetensi"
+          component={DropdownKompetensi}
+        />
+         <Stack.Screen
+          options={{ headerShown: false }}
+          name="DropdownSemester"
+          component={DropdownSemester}
+        />
+        <Stack.Screen
+          options={{ headerShown: false }}
+          name="MakePackageQuestionPremium"
+          component={MakePackageQuestionPremium}
         />
         
 

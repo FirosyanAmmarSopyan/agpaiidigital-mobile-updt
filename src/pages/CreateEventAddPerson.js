@@ -23,6 +23,9 @@ function Header() {
     <>
       <StatusBar backgroundColor="grey" />
       <HStack>
+
+
+      
         <HStack
           style={{
             justifyContent: "flex-start",

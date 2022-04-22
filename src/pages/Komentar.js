@@ -77,13 +77,11 @@ const Komentar = () => {
           </View>
           <Divider mt="2" />
           <KomentarComponent />
-          <KomentarComponent />
-          <KomentarComponent />
+         
         </ScrollView>
       </View>
       <View>
         <View
-          flex={1}
           style={{flexDirection: "row", backgroundColor: "white" }}
         >
           <TextArea

@@ -78,7 +78,7 @@ const KomentarComponent = () => {
             <View >
             <Button
               containerStyle={{
-                width: 90,
+                width: 100,
                 marginLeft:-10
               }}
               title="Lihat balasan"
