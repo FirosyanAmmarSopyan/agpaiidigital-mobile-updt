@@ -20,8 +20,48 @@ const Home = ({ navigation }) => {
         page: "PageA",
       },
       {
+        title: "AcaraSaya",
+        page: "AcaraSaya",
+        color: "#2DEA40",
+      },
+      {
+        title: "OpsiBuatAcara",
+        page: "OpsiBuatAcara",
+        color: "#2DEA40",
+      },
+      {
+        title: "AcaraLainnya",
+        page: "AcaraLainnya",
+        color: "#2DEA40",
+      },
+      {
+        title: "MenuLainnya",
+        page: "MenuLainnya",
+        color: "#2DEA40",
+      },
+      {
+        title: "RincianTransaksi",
+        page: "RincianTransaksi",
+        color: "#2DEA40",
+      },
+      {
+        title: "MenuPemasukan",
+        page: "MenuPemasukan",
+        color: "#2DEA40",
+      },
+      {
+        title: "MenuSharing",
+        page: "MenuSharing",
+        color: "#2DEA40",
+      },
+      {
         title: "PenilaianMenu",
         page: "PenilaianMenu",
+        color: "#2DEA40",
+      },
+      {
+        title: "PenilaianPenghasilan",
+        page: "PenilaianPenghasilan",
       },
       {
         title: "Kamera",
@@ -173,27 +213,19 @@ const Home = ({ navigation }) => {
         color: "#FF0000",
       },
       {
-        title: "MakeEvent",
-        page: "MakeEvent",
-        color: "#FF0000",
-      },
-      {
         title: "DetailEvent",
         page: "DetailEvent",
         color: "#2DEA40",
       },
       {
-        title: "ExploreEvent",
-        page: "ExploreEvent",
-        color: "#FF0000",
-      },
-      {
         title: "InvitationEmpty",
         page: "InvitationEmpty",
       },
+
       {
         title: "EmptyEvent",
         page: "EmptyEvent",
+        color: "#2DEA40",
       },
       {
         title: "HeaderPickPhoto",
@@ -202,26 +234,15 @@ const Home = ({ navigation }) => {
       {
         title: "HomeEvent",
         page: "HomeEvent",
+        color: "#2DEA40",
       },
       {
         title: "Invitation",
         page: "Invitation",
       },
       {
-        title: "CreateEventAddPerson",
-        page: "CreateEventAddPerson",
-      },
-      {
         title: "MeetingIsi",
         page: "MeetingIsi",
-      },
-      {
-        title: "PickPersonEvent",
-        page: "PickPersonEvent",
-      },
-      {
-        title: "CreateEvent",
-        page: "CreateEvent",
       },
       {
         title: "ButirSoal = (PaketSoalDetail)",

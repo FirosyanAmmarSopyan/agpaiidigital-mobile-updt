@@ -37,7 +37,7 @@ const EmptyEvent = () => {
         </Text>
         <View style={{ flexDirection: "row", marginTop: 10 }}>
           <Button
-            title={"Explore"}
+            title={"Acara Lainnya"}
             titleStyle={{ fontSize: 15, color: "white" }}
             buttonStyle={{
               width: 132,
@@ -47,7 +47,7 @@ const EmptyEvent = () => {
             }}
           />
           <Button
-            title={"Undangan"}
+            title={"Menu"}
             titleStyle={{ fontSize: 15, color: "#009788" }}
             buttonStyle={{
               marginLeft: 9,
@@ -81,20 +81,8 @@ const EmptyEvent = () => {
             width: 347,
           }}
         >
-          Buat acara anda dan terhubung dengan pengguna lain. acara yang adan
-          buat akan muncul disini
+          Masuk ke menu dan buat acara anda sekarang juga.
         </Text>
-        <Button
-          icon={<MaterialIcons name="add" color={"white"} size={35} />}
-          buttonStyle={{
-            backgroundColor: "#06A999",
-            width: 50,
-            height: 50,
-            borderRadius: 1000,
-            alignSelf: "center",
-            marginTop: 27,
-          }}
-        />
       </View>
       </ScrollView>
     </View>

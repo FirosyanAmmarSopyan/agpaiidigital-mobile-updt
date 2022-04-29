@@ -16,11 +16,11 @@ const HeaderMakePost = () => {
         </View>
 
         <View style={{ alignSelf: "center" }}>
-          <Heading size="lg">Buat Postingan</Heading>
+          <Heading size="md">Buat Postingan</Heading>
         </View>
         <View style={{alignSelf:"center"}}>
-          <Button small style={{borderRadius:20,width:70,backgroundColor:"#009788"}} >
-            <Text style={{color:"white"}}>Posting</Text>
+          <Button small style={{borderRadius:20,width:80,backgroundColor:"#009788"}} >
+            <Text style={{color:"white",fontSize:12}}>Posting</Text>
           </Button>
         </View>
       </View>

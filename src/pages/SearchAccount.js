@@ -14,12 +14,16 @@ import {
   Heading,
   StatusBar,
   Avatar,
+  ScrollView
 } from "native-base";
 import { Ionicons, MaterialIcons, AntDesign } from "@expo/vector-icons";
+import IsiAcara from "../components/IsiAcara";
+
+
 
 function SearchBar() {
   return (
-    <View>
+    <View style={{backgroundColor:"white"}}>
       <View style={{ flexDirection: "row" }}>
         <IconButton
           style={{ alignSelf: "center" }}
@@ -48,32 +52,15 @@ function SearchBar() {
 
 const SearchAccount = () => {
   return (
-    <View style={{ alignSelf: "center" }}>
+    <View style={{ alignSelf: "center",backgroundColor:"white",height:"100%" }}>
       <SearchBar />
-      <View style={{ marginTop: 10, flexDirection: "row" }}>
-        <Avatar
-        size="md"
-          source={{
-            uri: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-          }}
-        ></Avatar>
-        <View style={{ flexDirection: "column", marginLeft: 20 }}>
-          <Heading>Suparjo,S.Pd.I</Heading>
-          <Text>Guru TK Sumber Makmur Sidodol</Text>
-        </View>
-      </View>
-      <Divider my="2" />
-      <View style={{ marginTop: 10, flexDirection: "row" }}>
-        <Avatar
-          source={{
-            uri: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-          }}
-        ></Avatar>
-        <View style={{ flexDirection: "column", marginLeft: 20 }}>
-          <Heading>Suparjo,S.Pd.I</Heading>
-          <Text>Guru TK Sumber Makmur Sidodol</Text>
-        </View>
-      </View>
+      <ScrollView>
+        <IsiAcara />
+        <IsiAcara />
+        <IsiAcara />
+        <IsiAcara />
+        
+      </ScrollView>
     </View>
   );
 };

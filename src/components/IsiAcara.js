@@ -1,130 +1,124 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
+import { View } from "react-native";
 import {
+  StatusBar,
+  Text,
   Icon,
   IconButton,
-  NativeBaseProvider,
-  Center,
-  Box,
-  StatusBar,
   Heading,
-  AspectRatio,
-  HStack,
-  Stack,
-  ScrollView,
   Avatar,
 } from "native-base";
-import PosterAcara2 from "../assets/posterAcara2.svg";
-import MapsAcara from "../assets/MapsAcara.svg";
-import { MaterialIcons, AntDesign, Ionicons, Entypo, FontAwesome } from "@expo/vector-icons";
+import BannerIsiAcara from "./../assets/banner-isiacara.svg";
 import { SvgXml } from "react-native-svg";
+import { Ionicons, FontAwesome } from "@expo/vector-icons";
+import UserSpeak from "./../assets/user-speak.svg";
 
 const IsiAcara = () => {
   return (
-    <View style={{ backgroundColor: "#ffffff" }}>
-      <Box alignItems="center">
+    <View style={{ marginVertical: 15 }}>
+      <StatusBar />
+      <View
+        style={{
+          alignSelf: "center",
+          backgroundColor: "white",
+          borderRadius: 20,
+          elevation: 10,
+          width:"100%"
+        }}
+      >
+        <View>
+          <SvgXml xml={BannerIsiAcara} />
+        </View>
         <View
+          flexDirection="row"
           style={{
-            borderTopStartRadius: 15,
-            borderTopEndRadius: 15,
-            backgroundColor: "#009788",
-            paddingBottom: 15,
-            marginBottom: 20,
-            borderBottomEndRadius: 15,
-            borderBottomStartRadius: 15,
+            position: "absolute",
+            backgroundColor: "white",
+            maxWidth: 220,
+            borderBottomEndRadius: 20,
+            padding: 5,
+            
           }}
         >
-          <Box
+          <Avatar
+            bg="transparent"
+            size={30}
+            source={{
+              uri: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            }}
+          ></Avatar>
+          <Heading
+            size="md"
+            bold
+            style={{ marginLeft: 10, alignSelf: "center", maxWidth: 150 }}
+          >
+            Sulimin Subrek,S.Pd.I
+          </Heading>
+        </View>
+        <View style={{ marginLeft: 20 }}>
+          <Heading bold>Rapat bulanan bersama guru agama</Heading>
+          <Text style={{ marginVertical: 5, color: "grey" }}>
+            22 Desember 2022 pukul 13:11
+          </Text>
+          <View
+            flexDirection="row"
+            style={{ marginLeft: -5, marginVertical: 5 }}
+          >
+            <Icon
+              name="md-location-sharp"
+              as={Ionicons}
+              size="sm"
+              style={{ color: "#009788" }}
+            ></Icon>
+            <Text
+              style={{
+                alignSelf: "center",
+                fontWeight: "bold",
+                fontSize: 17,
+                marginLeft: 10,
+              }}
+            >
+              Bujangan Bontot
+            </Text>
+          </View>
+          <View
             style={{
-              borderTopStartRadius: 15,
-              borderTopEndRadius: 15,
-              borderBottomEndRadius: 15,
-              borderBottomStartRadius: 0,
-            }}
-            maxW="80"
-            rounded="lg"
-            overflow="hidden"
-            borderColor="coolGray.200"
-            borderWidth="1"
-            _dark={{
-              borderColor: "coolGray.600",
-              backgroundColor: "gray.700",
-            }}
-            _web={{
-              shadow: 2,
-              borderWidth: 0,
-            }}
-            _light={{
-              backgroundColor: "gray.50",
+              justifyContent: "space-between",
+              flexDirection: "row",
+              marginRight: 10,
             }}
           >
-            <Box>
-              <AspectRatio w="100%" ratio={16 / 9}>
-                <SvgXml xml={PosterAcara2} />
-              </AspectRatio>
-              <Box
+            <View flexDirection="row">
+              <SvgXml
+                style={{ marginVertical: 5, alignSelf: "center" }}
+                xml={UserSpeak}
+              />
+              <Text
                 style={{
-                  borderBottomEndRadius: 20,
-                  flexDirection: "row",
-                  alignItems: "center",
+                  alignSelf: "center",
+                  marginLeft: 10,
+                  fontWeight: "bold",
+                  fontSize: 17,
                 }}
-                bg="#ffffff"
-                _text={{
-                  fontWeight: "500",
-                  fontSize: "md",
-                  marginX: 5,
-                }}
-                position="absolute"
-                top="0"
-                px="3"
-                py="1.5"
               >
-                <Avatar
-                  size="sm"
-                  source={{
-                    uri: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-                  }}
-                />
-                Sulimin,S.Pd.I
-              </Box>
-            </Box>
-            <Stack p="4" space={3}>
-              <Stack space={3}>
-                <View style={{ flexDirection: "row" }}>
-                  <Heading style={{ maxWidth: 200 }} size="md" ml="-1">
-                    Rapat bulanan bersama guru agama
-                  </Heading>
-                  <View style={{backgroundColor:"white",marginLeft:50,borderRadius:100,width:43,height:"100%",marginTop:-30 }}>
-                  <LinearGradient
-                      // Button Linear Gradient
-                      colors={["#00E9D1", "#009788"]}
-                      start={{ x: 0, y: 1 }}
-                      style={{ borderRadius: 100, margin:5 }}
-                      end={{ x: 1, y: 0.9 }}
-                    >
-                      <IconButton
-                      style={{borderRadius:100}}
-                        icon={<Icon style={{marginLeft:3}} as={FontAwesome} name="bookmark" />}
-                        _icon={{
-                          color: "white",
-                          size: "xs",
-                        }}
-                      />
-                    </LinearGradient>
-                  </View>
-                </View>
-
-                <Text fontSize="xs" color="silver" fontWeight="100" ml="-0.5">
-                  22 Desember 2022 pukul 13:11
-                </Text>
-              </Stack>
-              <View alignItems="center">
-                <SvgXml style={{ marginBottom: -10 }} xml={MapsAcara} />
-              </View>
-            </Stack>
-          </Box>
+                Pelatihan
+              </Text>
+            </View>
+            <View>
+              <IconButton
+                style={{ alignSelf: "center" }}
+                width={"10%"}
+                icon={<Icon as={FontAwesome} name="heart-o" />}
+                borderRadius="full"
+                _icon={{
+                  color: "grey",
+                  size: "6",
+                }}
+              />
+            </View>
+          </View>
         </View>
-      </Box>
+      </View>
     </View>
   );
 };

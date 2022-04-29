@@ -31,7 +31,14 @@ import StudyIcon1 from "./../assets/study-icon1.svg";
 import Assignment1 from "./../assets/assignment1.svg";
 import Homework1 from "./../assets/homework1.svg";
 import Premium1 from "./../assets/premium1.svg";
-
+import IconPemasukan from "./../assets/icon-pemasukan.svg";
+import IconSharing from "./../assets/icon-sharing.svg";
+import BannerIsiAcara from "./../assets/banner-isiacara.svg";
+import UserSpeak from "./../assets/user-speak.svg";
+import AbsentColor from "./../assets/absent-color.svg";
+import CalendarColor from "./../assets/calendar-color.svg";
+import HeartLinear from "./../assets/heart-linear.svg";
+import ScheduleColor from "./../assets/schedule-color.svg";
 
 //JANGAN LUPA MASUKKAN NAME DI EXPORT BAWAH INI
 export {
@@ -66,4 +73,12 @@ export {
   Assignment1,
   Homework1,
   Premium1,
+  IconPemasukan,
+  IconSharing,
+  BannerIsiAcara,
+  UserSpeak,
+  AbsentColor,
+  CalendarColor,
+  HeartLinear,
+  ScheduleColor,
 };

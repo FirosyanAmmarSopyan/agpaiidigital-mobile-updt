@@ -7,23 +7,17 @@ import PageA from "./../pages/PageA";
 import React from "react";
 import PickPhoto from "../pages/PickPhoto";
 import InvitationEmpty from "../pages/InvitationEmpty";
-import ExploreEvent from "../pages/ExploreEvent";
 import Beranda from "../pages/Beranda";
 import Meeting from "../pages/Meeting";
 import SearchAccount from "../pages/SearchAccount";
 import LogiN from "../pages/Login";
 import MakePost from "../pages/MakePost";
-import MakeEvent from "../pages/MakeEvent";
-import MakeEventEmpty from "../pages/MakeEventEmpty";
 import DetailEvent from "../pages/DetailEvent";
 import EmptyEvent from "../pages/EmptyEvent";
 import Notifikasi from "../pages/Notifikasi";
 import HomeEvent from "../pages/HomeEvent";
 import Invitation from "../pages/Invitation";
-import CreateEventAddPerson from "../pages/CreateEventAddPerson";
 import MeetingIsi from "../pages/MeetingIsi";
-import PickPersonEvent from "../pages/PickPersonEvent";
-import CreateEvent from "../pages/CreateEvent";
 import Komentar from "../pages/Komentar";
 import Kosong from "../pages/Kosong";
 import Kamera from "../pages/Kamera";
@@ -42,6 +36,14 @@ import PackageSoal from "../pages/PackageSoal";
 import PenilaianMenu from "../pages/PenilaianMenu";
 import CreatePackageQuestion from "../pages/CreatePackageQuestion";
 import MakeQuestion from "../pages/MakeQuestion";
+import PenilaianPenghasilan from "../pages/PenilaianPenghasilan";
+import MenuPemasukan from "../pages/MenuPemasukan";
+import MenuSharing from "../pages/MenuSharing";
+import RincianTransaksi from "../pages/RincianTransaksi";
+import MenuLainnya from "../pages/MenuLainnya";
+import AcaraLainnya from "../pages/AcaraLainnya";
+import AcaraSaya from "../pages/AcaraSaya";
+import OpsiBuatAcara from "../pages/OpsiBuatAcara";
 
 // import component
 import Header from "./../components/Header";
@@ -53,7 +55,6 @@ import ImageSlider from "./../components/ImageSlider";
 import HeaderRapat from "./../components/HeaderRapat";
 import HeaderMakePost from "./../components/HeaderMakePost";
 import HeaderPickPhoto from "./../components/HeaderPickPhoto";
-import IsiAcara from "./../components/IsiAcara";
 import IsiListRapat from "../components/IsiListRapat";
 import IsiListEvent from "../components/IsiListEvent";
 import PaketSoalPremium from "../components/PaketSoalPremium";
@@ -73,6 +74,7 @@ import DropdownClass from "../components/DropdownClass";
 import DropdownKompetensi from "../components/DropdownKompetensi";
 import DropdownSemester from "../components/DropdownSemester";
 import MakePackageQuestionPremium from "../components/MakePackageQuestionPremium";
+import IsiAcara from "../components/IsiAcara";
 
 
 
@@ -91,6 +93,51 @@ const router = () => {
         options={{ headerShown: false }}
           name="IsiListRapat"
           component={IsiListRapat}
+        />
+          <Stack.Screen
+        options={{ headerShown: false }}
+          name="AcaraSaya"
+          component={AcaraSaya}
+        />
+          <Stack.Screen
+        options={{ headerShown: false }}
+          name="OpsiBuatAcara"
+          component={OpsiBuatAcara}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="AcaraLainnya"
+          component={AcaraLainnya}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="MenuLainnya"
+          component={MenuLainnya}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="RincianTransaksi"
+          component={RincianTransaksi}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="IsiAcara"
+          component={IsiAcara}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="PenilaianPenghasilan"
+          component={PenilaianPenghasilan}
+        />
+         <Stack.Screen
+        options={{ headerShown: false }}
+          name="MenuSharing"
+          component={MenuSharing}
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+          name="MenuPemasukan"
+          component={MenuPemasukan}
         />
         <Stack.Screen
         options={{ headerShown: false }}
@@ -265,26 +312,9 @@ const router = () => {
         />
         <Stack.Screen
           options={{ headerShown: false }}
-          name="MakeEvent"
-          component={MakeEvent}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="MakeEventEmpty"
-          component={MakeEventEmpty}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
           name="DetailEvent"
           component={DetailEvent}
         />
-
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="ExploreEvent"
-          component={ExploreEvent}
-        />
-
         <Stack.Screen
           options={{ headerShown: false }}
           name="InvitationEmpty"
@@ -320,11 +350,7 @@ const router = () => {
           name="HeaderPickPhoto"
           component={HeaderPickPhoto}
         />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="IsiAcara"
-          component={IsiAcara}
-        />
+      
         <Stack.Screen
           options={{ headerShown: false }}
           name="HomeEvent"
@@ -337,23 +363,8 @@ const router = () => {
         />
         <Stack.Screen
           options={{ headerShown: false }}
-          name="CreateEventAddPerson"
-          component={CreateEventAddPerson}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
           name="MeetingIsi"
           component={MeetingIsi}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="PickPersonEvent"
-          component={PickPersonEvent}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="CreateEvent"
-          component={CreateEvent}
         />
         <Stack.Screen
           options={{ headerShown: false }}

@@ -149,24 +149,6 @@ const PenilaianMenu = () => {
             marginVertical: 20,
           }}
         >
-          <TouchableOpacity   style={{
-                backgroundColor: "white",
-                elevation: 5,
-                padding: 10,
-                borderRadius: 10,
-                width: "45%",
-                height: 150,
-                paddingTop: 20,
-              }}>
-            <View
-            
-            >
-              <SvgXml style={{ alignSelf: "center" }} xml={Premium1} />
-              <Heading style={{ alignSelf: "center" }} size="md" mt="3">
-                Item Premium
-              </Heading>
-            </View>
-          </TouchableOpacity>
         </View>
       </View>
     </View>

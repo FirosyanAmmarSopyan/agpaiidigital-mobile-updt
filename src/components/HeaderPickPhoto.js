@@ -18,9 +18,9 @@ const HeaderPickPhoto = () => {
         <View style={{ alignSelf: "center" }}>
           <Button
             small
-            style={{ borderRadius: 20, width: 70, backgroundColor: "transparent" }}
+            style={{ borderRadius: 20, width: 100, backgroundColor: "transparent" }}
           >
-            <Heading size="sm" style={{ color: "black" }}>Selesai</Heading>
+            <Heading size="xs" style={{ color: "black" }}>Selesai</Heading>
           </Button>
         </View>
       </View>

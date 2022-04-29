@@ -4,7 +4,6 @@ import { View , Text , Dimensions } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import  EmptyInvite  from "../assets/EmptyInvite.svg";
 import { SvgXml } from "react-native-svg";
-import IsiAcara from "../components/IsiAcara";
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").Height;
@@ -38,10 +37,7 @@ const Invitation = () => {
             <Header></Header>
             <ScrollView>
             <View style={{marginBottom:50}}>
-                <IsiAcara/>
-                <IsiAcara/>
-                <IsiAcara/>
-                <IsiAcara/>
+
             </View>
             </ScrollView>
         </View>
